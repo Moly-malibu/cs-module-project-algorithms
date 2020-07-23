@@ -6,7 +6,10 @@ from collections import namedtuple
 Item = namedtuple('Item', ['index', 'size', 'value'])
 
 def knapsack_solver(items, capacity):
-    # Your code here
+    if n == 0:
+          return 0
+        if (item[n-1]) > n):
+              
 
     pass
 
