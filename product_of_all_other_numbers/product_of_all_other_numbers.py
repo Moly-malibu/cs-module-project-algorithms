@@ -2,7 +2,6 @@
 Input: a List of integers
 Returns: a List of integers
 '''
-
 def product_of_all_other_numbers(arr):
   output_arr = []  
   for i in range(len(arr)):  

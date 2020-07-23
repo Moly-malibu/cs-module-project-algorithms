@@ -4,21 +4,22 @@ Returns: an integer
 '''
 
 def single_number(arr):
-    fool = []
+    no_dups = []
     for x in arr:  
-      if x not in fool:  
-        fool.append(x) #add 
+      if x not in no_dups:  
+        no_dups.append(x) #add 
       else:
-        fool.remove(x)  
-    return fool[0]  
+        no_dups.remove(x)  
+    return no_dups[0]  
 
-def single_number_best(arr):
+
+def single_number_best(nums):
   count = {}
-  for x in arr:
-    if x in count:
-      count[x] += 1
+  for num in nums:
+    if num not in counts:
+      count[num] = 1
     else:
-      count[x] = 1
+      counts[num] += 1
   for key in count:
     if count[key] == 1:
       return key
